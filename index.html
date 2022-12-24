@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv='cache-control' content='no-cache'> 
+    <meta http-equiv='expires' content='0'> 
+    <meta http-equiv='pragma' content='no-cache'>
+    <title>Text To Speech Demo v8</title>
+    <style>
+    body {
+      background-color: #222;
+      color: #EEE
+    }
+    #demoB, #demoB * { padding: 10px; }
+    #demoB {
+      background: #222;
+    }
+    #demoB * {
+      font-family: arial, sans-serif;
+      box-sizing: border-box;
+      display: block;
+      width: 100%;
+    }
+    </style>
+    <script defer src="lava.js"></script>
+  </head>
+  <body>
+    v8
+    <form id="demoB">
+      <!-- (A) VOICE PICKER -->
+      <label>Choose A Voice</label>
+      <select id="demoB-voice" disabled></select>
+
+      <!-- (B) SAY SOMETHING -->
+      <label>Go!</label>
+      <input type="submit" id="demoB-go" value="Speak"/>
+    </form>
+  </body>
+</html>
