@@ -1,18 +1,17 @@
-const CACHE_NAME = "carcassonne-sandbox-c2b564312088";
+const CACHE_NAME = "carcassonne-sandbox-b5edb05df2e2";
 const CACHE_PREFIX = "carcassonne-sandbox-";
 const OPTIONAL_CACHE_MESSAGE = "CACHE_OPTIONAL_ASSETS";
 const CRITICAL_CACHE_URLS = [
   "/",
   "/assets/about-ByZ0jlx7.js",
-  "/assets/app-dVG8hZ09.js",
-  "/assets/app-nXl1d_DL.css",
+  "/assets/app-DTLSsPpP.js",
+  "/assets/app-Dw1xSmiu.css",
   "/assets/landing-B0Isz5Yf.js",
   "/assets/landing-C0t3xtlj.css",
   "/assets/notFound-ByZ0jlx7.js"
 ];
 const OPTIONAL_CACHE_URLS = [
-  "/assets/tiles_abstractsonne_unsaturated--rnZ1OZN.png",
-  "/assets/tiles_abstractsonne-yUcRcL6m.png",
+  "/assets/tiles_abstractsonne-DwFaxU_L.webp",
   "/assets/tiles_first_edition-CcZLkXT6.webp",
   "/assets/tiles_second_edition_low-ChJnQUCG.webp",
   "/assets/tiles_second_edition-7cZU_jU_.webp",
@@ -38,7 +37,7 @@ const OPTIONAL_CACHE_URLS = [
   "/assets/moroccan-flower-dark-BEjHxG9j.png",
   "/assets/purty_wood-D-XFShmP.png",
   "/assets/retina_wood-Dasm1nPh.png",
-  "/assets/SearchPanel-BbrejJc4.js",
+  "/assets/SearchPanel-CphBvLyd.js",
   "/assets/SearchPanel-DI1DqRPE.css",
   "/assets/tex2res4-Bo-bwDiX.png",
   "/assets/theme_dark-rmdpsR-r.png",
