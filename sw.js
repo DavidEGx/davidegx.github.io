@@ -1,17 +1,16 @@
-const CACHE_NAME = "carcassonne-sandbox-b5edb05df2e2";
+const CACHE_NAME = "carcassonne-sandbox-d5ba43d7d678";
 const CACHE_PREFIX = "carcassonne-sandbox-";
 const OPTIONAL_CACHE_MESSAGE = "CACHE_OPTIONAL_ASSETS";
 const CRITICAL_CACHE_URLS = [
   "/",
   "/assets/about-ByZ0jlx7.js",
-  "/assets/app-DTLSsPpP.js",
-  "/assets/app-Dw1xSmiu.css",
+  "/assets/app-CCwDRVSP.js",
+  "/assets/app-JoejPY-0.css",
   "/assets/landing-B0Isz5Yf.js",
   "/assets/landing-C0t3xtlj.css",
   "/assets/notFound-ByZ0jlx7.js"
 ];
 const OPTIONAL_CACHE_URLS = [
-  "/assets/tiles_abstractsonne-DwFaxU_L.webp",
   "/assets/tiles_first_edition-CcZLkXT6.webp",
   "/assets/tiles_second_edition_low-ChJnQUCG.webp",
   "/assets/tiles_second_edition-7cZU_jU_.webp",
@@ -37,7 +36,7 @@ const OPTIONAL_CACHE_URLS = [
   "/assets/moroccan-flower-dark-BEjHxG9j.png",
   "/assets/purty_wood-D-XFShmP.png",
   "/assets/retina_wood-Dasm1nPh.png",
-  "/assets/SearchPanel-CphBvLyd.js",
+  "/assets/SearchPanel-CflLp2X2.js",
   "/assets/SearchPanel-DI1DqRPE.css",
   "/assets/tex2res4-Bo-bwDiX.png",
   "/assets/theme_dark-rmdpsR-r.png",
@@ -48,6 +47,23 @@ const OPTIONAL_CACHE_URLS = [
   "/assets/tile_c2-tFnhQ6KZ.jpg",
   "/assets/tileable_wood_texture-DMAuHUfI.png",
   "/assets/tournament-navigation-DxNzVdsI.json",
+  "/assets/type_01-DwtQm4me.webp",
+  "/assets/type_02-cG9GOjdE.webp",
+  "/assets/type_03-ByhbabH7.webp",
+  "/assets/type_04-D5YFjEiL.webp",
+  "/assets/type_05-BscQXkee.webp",
+  "/assets/type_06-UAlKqt-6.webp",
+  "/assets/type_07-K71GMnT1.webp",
+  "/assets/type_08-D3c7VStm.webp",
+  "/assets/type_09-DQysQx7P.webp",
+  "/assets/type_10-rp7DTRve.webp",
+  "/assets/type_12-Coz90hlo.webp",
+  "/assets/type_13-BOEarY0_.webp",
+  "/assets/type_14-DqW-ruQ7.webp",
+  "/assets/type_15-BF6HjTrL.webp",
+  "/assets/type_22-CwQAFUiy.webp",
+  "/assets/type_23-DdRKJL4Y.webp",
+  "/assets/type_24-BjnNZj_Z.webp",
   "/assets/webb-dark-HnmwqEEW.png",
   "/icons/apple-touch-icon.png",
   "/icons/favicon-32.png",
