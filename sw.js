@@ -1,10 +1,10 @@
-const CACHE_NAME = "carcassonne-sandbox-29887f207496";
+const CACHE_NAME = "carcassonne-sandbox-c2b564312088";
 const CACHE_PREFIX = "carcassonne-sandbox-";
 const OPTIONAL_CACHE_MESSAGE = "CACHE_OPTIONAL_ASSETS";
 const CRITICAL_CACHE_URLS = [
   "/",
   "/assets/about-ByZ0jlx7.js",
-  "/assets/app-DaOqzEvy.js",
+  "/assets/app-dVG8hZ09.js",
   "/assets/app-nXl1d_DL.css",
   "/assets/landing-B0Isz5Yf.js",
   "/assets/landing-C0t3xtlj.css",
@@ -38,7 +38,7 @@ const OPTIONAL_CACHE_URLS = [
   "/assets/moroccan-flower-dark-BEjHxG9j.png",
   "/assets/purty_wood-D-XFShmP.png",
   "/assets/retina_wood-Dasm1nPh.png",
-  "/assets/SearchPanel-CC4bocQe.js",
+  "/assets/SearchPanel-BbrejJc4.js",
   "/assets/SearchPanel-DI1DqRPE.css",
   "/assets/tex2res4-Bo-bwDiX.png",
   "/assets/theme_dark-rmdpsR-r.png",
@@ -48,6 +48,7 @@ const OPTIONAL_CACHE_URLS = [
   "/assets/tile_c1-BbU3w6eo.jpg",
   "/assets/tile_c2-tFnhQ6KZ.jpg",
   "/assets/tileable_wood_texture-DMAuHUfI.png",
+  "/assets/tournament-navigation-DxNzVdsI.json",
   "/assets/webb-dark-HnmwqEEW.png",
   "/icons/apple-touch-icon.png",
   "/icons/favicon-32.png",
