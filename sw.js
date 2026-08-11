@@ -1,11 +1,11 @@
-const CACHE_NAME = "carcassonne-sandbox-e842f9cec198";
+const CACHE_NAME = "carcassonne-sandbox-9decabb9f0a5";
 const CACHE_PREFIX = "carcassonne-sandbox-";
 const OPTIONAL_CACHE_MESSAGE = "CACHE_OPTIONAL_ASSETS";
 const CRITICAL_CACHE_URLS = [
   "/",
   "/assets/about-ByZ0jlx7.js",
+  "/assets/app-BDVAyLlz.js",
   "/assets/app-CBqrrvWj.css",
-  "/assets/app-DDBmwHVr.js",
   "/assets/landing-B0Isz5Yf.js",
   "/assets/landing-C0t3xtlj.css",
   "/assets/notFound-ByZ0jlx7.js"
@@ -36,8 +36,8 @@ const OPTIONAL_CACHE_URLS = [
   "/assets/moroccan-flower-dark-BEjHxG9j.png",
   "/assets/purty_wood-D-XFShmP.png",
   "/assets/retina_wood-Dasm1nPh.png",
+  "/assets/SearchPanel-CNnhvCkO.js",
   "/assets/SearchPanel-DI1DqRPE.css",
-  "/assets/SearchPanel-DTd5vJIg.js",
   "/assets/tex2res4-Bo-bwDiX.png",
   "/assets/theme_dark-rmdpsR-r.png",
   "/assets/theme_light-BRbXdTlW.png",
@@ -46,7 +46,7 @@ const OPTIONAL_CACHE_URLS = [
   "/assets/tile_c1-BbU3w6eo.jpg",
   "/assets/tile_c2-tFnhQ6KZ.jpg",
   "/assets/tileable_wood_texture-DMAuHUfI.png",
-  "/assets/tournament-navigation-DxNzVdsI.json",
+  "/assets/tournament-navigation-CDTYRmeI.json",
   "/assets/type_01-DwtQm4me.webp",
   "/assets/type_02-cG9GOjdE.webp",
   "/assets/type_03-ByhbabH7.webp",
