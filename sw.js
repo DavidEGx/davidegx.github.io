@@ -1,10 +1,10 @@
-const CACHE_NAME = "carcassonne-sandbox-7eb62711f735";
+const CACHE_NAME = "carcassonne-sandbox-60a8bcc9f18b";
 const CACHE_PREFIX = "carcassonne-sandbox-";
 const OPTIONAL_CACHE_MESSAGE = "CACHE_OPTIONAL_ASSETS";
 const CRITICAL_CACHE_URLS = [
   "/",
-  "/assets/app-B1GU5NdE.css",
-  "/assets/app-Dxk8ZilM.js"
+  "/assets/app-B__-pdwv.js",
+  "/assets/app-DgVUWGDi.css"
 ];
 const OPTIONAL_CACHE_URLS = [
   "/assets/tiles_first_edition-CcZLkXT6.webp",
@@ -43,7 +43,7 @@ const OPTIONAL_CACHE_URLS = [
   "/assets/notFound-ByZ0jlx7.js",
   "/assets/purty_wood-D-XFShmP.png",
   "/assets/retina_wood-Dasm1nPh.png",
-  "/assets/SearchPanel-BQT8FaXK.js",
+  "/assets/SearchPanel-C-Qtxg6Z.js",
   "/assets/SearchPanel-DI1DqRPE.css",
   "/assets/tex2res4-Bo-bwDiX.png",
   "/assets/tile_abstractsonne_unsaturated-Bz04CWS6.png",
