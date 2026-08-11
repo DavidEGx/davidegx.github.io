@@ -1,14 +1,10 @@
-const CACHE_NAME = "carcassonne-sandbox-9decabb9f0a5";
+const CACHE_NAME = "carcassonne-sandbox-7eb62711f735";
 const CACHE_PREFIX = "carcassonne-sandbox-";
 const OPTIONAL_CACHE_MESSAGE = "CACHE_OPTIONAL_ASSETS";
 const CRITICAL_CACHE_URLS = [
   "/",
-  "/assets/about-ByZ0jlx7.js",
-  "/assets/app-BDVAyLlz.js",
-  "/assets/app-CBqrrvWj.css",
-  "/assets/landing-B0Isz5Yf.js",
-  "/assets/landing-C0t3xtlj.css",
-  "/assets/notFound-ByZ0jlx7.js"
+  "/assets/app-B1GU5NdE.css",
+  "/assets/app-Dxk8ZilM.js"
 ];
 const OPTIONAL_CACHE_URLS = [
   "/assets/tiles_first_edition-CcZLkXT6.webp",
@@ -22,6 +18,14 @@ const OPTIONAL_CACHE_URLS = [
   "/assets/manrope-latin-ext-Ch3YOpNY.woff2",
   "/assets/manrope-vietnamese-usUDDRr7.woff2",
   "/assets/material-symbols-outlined-CeOSsXN5.woff2",
+  "/images/workspace-preview.png",
+  "/licenses/THIRD_PARTY_NOTICES.txt",
+  "/public-pages.css",
+  "/tournament-icons/README.md",
+  "/tournament-icons/cs_liga.webp",
+  "/tournament-icons/devir.webp",
+  "/tournament-icons/world-championship.webp",
+  "/assets/about-ByZ0jlx7.js",
   "/assets/congruent_outline-DLlWotqQ.png",
   "/assets/connectwork-Dt1QCw5a.png",
   "/assets/cork-board-BNsy9H8U.png",
@@ -30,17 +34,18 @@ const OPTIONAL_CACHE_URLS = [
   "/assets/denim-C6eQYlav.png",
   "/assets/double-bubble-dark-B53eXaiL.webp",
   "/assets/grey_wash_wall-8yyRqWx-.png",
+  "/assets/landing-B0Isz5Yf.js",
+  "/assets/landing-C0t3xtlj.css",
   "/assets/low_contrast_linen-ROoHiSHb.png",
   "/assets/manifest-_Rm2g74H.json",
   "/assets/meeples_outline-Cbc1skf0.webp",
   "/assets/moroccan-flower-dark-BEjHxG9j.png",
+  "/assets/notFound-ByZ0jlx7.js",
   "/assets/purty_wood-D-XFShmP.png",
   "/assets/retina_wood-Dasm1nPh.png",
-  "/assets/SearchPanel-CNnhvCkO.js",
+  "/assets/SearchPanel-BQT8FaXK.js",
   "/assets/SearchPanel-DI1DqRPE.css",
   "/assets/tex2res4-Bo-bwDiX.png",
-  "/assets/theme_dark-rmdpsR-r.png",
-  "/assets/theme_light-BRbXdTlW.png",
   "/assets/tile_abstractsonne_unsaturated-Bz04CWS6.png",
   "/assets/tile_abstractsonne-DQ5rxeGc.png",
   "/assets/tile_c1-BbU3w6eo.jpg",
@@ -97,22 +102,47 @@ self.addEventListener("activate", (event) => {
 });
 
 let optionalCachePromise;
+const pendingAssetRequests = new Map();
+
+async function fetchAndCache(request) {
+  const requestUrl =
+    typeof request === "string"
+      ? new URL(request, self.location.origin).href
+      : request.url;
+  const pendingRequest = pendingAssetRequests.get(requestUrl);
+  if (pendingRequest) {
+    return (await pendingRequest).clone();
+  }
+
+  const fetchPromise = fetch(request)
+    .then(async (response) => {
+      if (response.ok || response.type === "opaque") {
+        const cache = await caches.open(CACHE_NAME);
+        await cache.put(request, response.clone());
+      }
+      return response;
+    })
+    .finally(() => pendingAssetRequests.delete(requestUrl));
+
+  pendingAssetRequests.set(requestUrl, fetchPromise);
+  return (await fetchPromise).clone();
+}
 
 async function cacheOptionalAssets() {
   const cache = await caches.open(CACHE_NAME);
 
-  for (const url of OPTIONAL_CACHE_URLS) {
-    if (await cache.match(url)) continue;
+  await Promise.all(
+    OPTIONAL_CACHE_URLS.map(async (url) => {
+      if (await cache.match(url)) return;
 
-    try {
-      const response = await fetch(url);
-      if (response.ok || response.type === "opaque") {
-        await cache.put(url, response);
+      try {
+        const response = await fetchAndCache(url);
+        await response.body?.cancel();
+      } catch {
+        // A later page visit will retry assets that could not be cached.
       }
-    } catch {
-      // A later page visit will retry assets that could not be cached.
-    }
-  }
+    }),
+  );
 }
 
 function cacheOptionalAssetsOnce() {
@@ -133,12 +163,7 @@ async function cacheFirst(request) {
   const cached = await caches.match(request);
   if (cached) return cached;
 
-  const response = await fetch(request);
-  if (response.ok || response.type === "opaque") {
-    const cache = await caches.open(CACHE_NAME);
-    await cache.put(request, response.clone());
-  }
-  return response;
+  return fetchAndCache(request);
 }
 
 async function appShell(request) {
