@@ -1,4 +1,4 @@
-const CACHE_NAME = "carcassonne-sandbox-ab87db9cf3dc";
+const CACHE_NAME = "carcassonne-sandbox-acbfb69db59c";
 const CACHE_PREFIX = "carcassonne-sandbox-";
 const OPTIONAL_CACHE_MESSAGE = "CACHE_OPTIONAL_ASSETS";
 const CRITICAL_CACHE_URLS = [
