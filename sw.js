@@ -1,10 +1,10 @@
-const CACHE_NAME = "carcassonne-sandbox-d47f1b3cb0a6";
+const CACHE_NAME = "carcassonne-sandbox-ab87db9cf3dc";
 const CACHE_PREFIX = "carcassonne-sandbox-";
 const OPTIONAL_CACHE_MESSAGE = "CACHE_OPTIONAL_ASSETS";
 const CRITICAL_CACHE_URLS = [
   "/",
-  "/assets/app-Be7XUqdY.css",
-  "/assets/app-COjybk39.js"
+  "/assets/app-BNVbcLb-.js",
+  "/assets/app-DAt2Zkdh.css"
 ];
 const OPTIONAL_CACHE_URLS = [
   "/assets/tiles_first_edition-CcZLkXT6.webp",
@@ -36,13 +36,13 @@ const OPTIONAL_CACHE_URLS = [
   "/assets/landing-B0Isz5Yf.js",
   "/assets/landing-C0t3xtlj.css",
   "/assets/low_contrast_linen-ROoHiSHb.png",
-  "/assets/manifest-_Rm2g74H.json",
+  "/assets/manifest-DzE7Fo3f.json",
   "/assets/meeples_outline-Cbc1skf0.webp",
   "/assets/moroccan-flower-dark-BEjHxG9j.png",
   "/assets/notFound-ByZ0jlx7.js",
   "/assets/purty_wood-D-XFShmP.png",
   "/assets/retina_wood-Dasm1nPh.png",
-  "/assets/SearchPanel-Dg-y1z8M.js",
+  "/assets/SearchPanel-BO0iWJKp.js",
   "/assets/SearchPanel-DI1DqRPE.css",
   "/assets/tex2res4-Bo-bwDiX.png",
   "/assets/tile_abstractsonne_unsaturated-Bz04CWS6.png",
@@ -77,8 +77,8 @@ const OPTIONAL_CACHE_URLS = [
 ];
 const REUSABLE_CACHE_URLS = [
   "/assets/about-ByZ0jlx7.js",
-  "/assets/app-Be7XUqdY.css",
-  "/assets/app-COjybk39.js",
+  "/assets/app-BNVbcLb-.js",
+  "/assets/app-DAt2Zkdh.css",
   "/assets/congruent_outline-DLlWotqQ.png",
   "/assets/connectwork-Dt1QCw5a.png",
   "/assets/cork-board-BNsy9H8U.png",
@@ -92,7 +92,7 @@ const REUSABLE_CACHE_URLS = [
   "/assets/landing-B0Isz5Yf.js",
   "/assets/landing-C0t3xtlj.css",
   "/assets/low_contrast_linen-ROoHiSHb.png",
-  "/assets/manifest-_Rm2g74H.json",
+  "/assets/manifest-DzE7Fo3f.json",
   "/assets/manrope-cyrillic-Dvxsihut.woff2",
   "/assets/manrope-greek-DL7QRZyv.woff2",
   "/assets/manrope-latin-DHIcAJRg.woff2",
@@ -104,7 +104,7 @@ const REUSABLE_CACHE_URLS = [
   "/assets/notFound-ByZ0jlx7.js",
   "/assets/purty_wood-D-XFShmP.png",
   "/assets/retina_wood-Dasm1nPh.png",
-  "/assets/SearchPanel-Dg-y1z8M.js",
+  "/assets/SearchPanel-BO0iWJKp.js",
   "/assets/SearchPanel-DI1DqRPE.css",
   "/assets/tex2res4-Bo-bwDiX.png",
   "/assets/tile_abstractsonne_unsaturated-Bz04CWS6.png",
