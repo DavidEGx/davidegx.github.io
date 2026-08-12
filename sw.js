@@ -1,10 +1,10 @@
-const CACHE_NAME = "carcassonne-sandbox-58b36e3d2638";
+const CACHE_NAME = "carcassonne-sandbox-d47f1b3cb0a6";
 const CACHE_PREFIX = "carcassonne-sandbox-";
 const OPTIONAL_CACHE_MESSAGE = "CACHE_OPTIONAL_ASSETS";
 const CRITICAL_CACHE_URLS = [
   "/",
-  "/assets/app-BSCKUejI.js",
-  "/assets/app-CpiGBxiB.css"
+  "/assets/app-Be7XUqdY.css",
+  "/assets/app-COjybk39.js"
 ];
 const OPTIONAL_CACHE_URLS = [
   "/assets/tiles_first_edition-CcZLkXT6.webp",
@@ -42,7 +42,7 @@ const OPTIONAL_CACHE_URLS = [
   "/assets/notFound-ByZ0jlx7.js",
   "/assets/purty_wood-D-XFShmP.png",
   "/assets/retina_wood-Dasm1nPh.png",
-  "/assets/SearchPanel-9Xe8y4Gh.js",
+  "/assets/SearchPanel-Dg-y1z8M.js",
   "/assets/SearchPanel-DI1DqRPE.css",
   "/assets/tex2res4-Bo-bwDiX.png",
   "/assets/tile_abstractsonne_unsaturated-Bz04CWS6.png",
@@ -50,7 +50,7 @@ const OPTIONAL_CACHE_URLS = [
   "/assets/tile_c1-BbU3w6eo.jpg",
   "/assets/tile_c2-tFnhQ6KZ.jpg",
   "/assets/tileable_wood_texture-DMAuHUfI.png",
-  "/assets/tournament-navigation-CDTYRmeI.json",
+  "/assets/tournament-navigation-CxFOY7_v.json",
   "/assets/type_01-DwtQm4me.webp",
   "/assets/type_02-cG9GOjdE.webp",
   "/assets/type_03-ByhbabH7.webp",
@@ -77,8 +77,8 @@ const OPTIONAL_CACHE_URLS = [
 ];
 const REUSABLE_CACHE_URLS = [
   "/assets/about-ByZ0jlx7.js",
-  "/assets/app-BSCKUejI.js",
-  "/assets/app-CpiGBxiB.css",
+  "/assets/app-Be7XUqdY.css",
+  "/assets/app-COjybk39.js",
   "/assets/congruent_outline-DLlWotqQ.png",
   "/assets/connectwork-Dt1QCw5a.png",
   "/assets/cork-board-BNsy9H8U.png",
@@ -104,7 +104,7 @@ const REUSABLE_CACHE_URLS = [
   "/assets/notFound-ByZ0jlx7.js",
   "/assets/purty_wood-D-XFShmP.png",
   "/assets/retina_wood-Dasm1nPh.png",
-  "/assets/SearchPanel-9Xe8y4Gh.js",
+  "/assets/SearchPanel-Dg-y1z8M.js",
   "/assets/SearchPanel-DI1DqRPE.css",
   "/assets/tex2res4-Bo-bwDiX.png",
   "/assets/tile_abstractsonne_unsaturated-Bz04CWS6.png",
@@ -115,7 +115,7 @@ const REUSABLE_CACHE_URLS = [
   "/assets/tiles_first_edition-CcZLkXT6.webp",
   "/assets/tiles_second_edition_low-ChJnQUCG.webp",
   "/assets/tiles_second_edition-7cZU_jU_.webp",
-  "/assets/tournament-navigation-CDTYRmeI.json",
+  "/assets/tournament-navigation-CxFOY7_v.json",
   "/assets/type_01-DwtQm4me.webp",
   "/assets/type_02-cG9GOjdE.webp",
   "/assets/type_03-ByhbabH7.webp",
