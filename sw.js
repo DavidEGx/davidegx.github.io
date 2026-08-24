@@ -1,4 +1,4 @@
-const CACHE_NAME = "carcassonne-sandbox-5cc717fb48fb";
+const CACHE_NAME = "carcassonne-sandbox-be6ba3641bff";
 const CACHE_PREFIX = "carcassonne-sandbox-";
 const OPTIONAL_CACHE_MESSAGE = "CACHE_OPTIONAL_ASSETS";
 const CRITICAL_CACHE_URLS = [
@@ -15,7 +15,7 @@ const OPTIONAL_CACHE_URLS = [
   "/assets/manrope-latin-DHIcAJRg.woff2",
   "/assets/manrope-latin-ext-Ch3YOpNY.woff2",
   "/assets/manrope-vietnamese-usUDDRr7.woff2",
-  "/images/workspace-preview.jpg",
+  "/images/carcassonne-lab-preview-v2.jpg",
   "/licenses/THIRD_PARTY_NOTICES.txt",
   "/public-pages.css",
   "/tournament-icons/cs_liga.webp",
