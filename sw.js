@@ -1,10 +1,10 @@
-const CACHE_NAME = "carcassonne-sandbox-465c5bb7ce97";
+const CACHE_NAME = "carcassonne-sandbox-9d3a20b7cf3f";
 const CACHE_PREFIX = "carcassonne-sandbox-";
 const OPTIONAL_CACHE_MESSAGE = "CACHE_OPTIONAL_ASSETS";
 const CRITICAL_CACHE_URLS = [
   "/",
+  "/assets/app-BAl6NgUq.js",
   "/assets/app-CHHmhBlM.css",
-  "/assets/app-QzGukU9K.js",
   "/assets/material-symbols-outlined-CeOSsXN5.woff2"
 ];
 const OPTIONAL_CACHE_URLS = [
@@ -55,8 +55,8 @@ const OPTIONAL_CACHE_URLS = [
   "/assets/red-farmer-BNq4WFja.png",
   "/assets/red-farmer-Ck_MVB_z.png",
   "/assets/retina_wood-Dasm1nPh.png",
-  "/assets/SearchPanel-CVklQZoE.js",
   "/assets/SearchPanel-DI1DqRPE.css",
+  "/assets/SearchPanel-Znb3ymPk.js",
   "/assets/tex2res4-Bo-bwDiX.png",
   "/assets/tile_01-DanlrLDJ.webp",
   "/assets/tile_02-CovFDKtX.webp",
@@ -131,7 +131,7 @@ const OPTIONAL_CACHE_URLS = [
   "/assets/tile_71-Gt9G7xne.webp",
   "/assets/tile_72-De8y3QTl.webp",
   "/assets/tileable_wood_texture-DMAuHUfI.png",
-  "/assets/tournament-navigation-CnMZQy2M.json",
+  "/assets/tournament-navigation-BVlDdOCF.json",
   "/assets/type_01-Dp9y0Itl.webp",
   "/assets/type_01-DwtQm4me.webp",
   "/assets/type_02-B1ZKg2-l.webp",
@@ -186,8 +186,8 @@ const OPTIONAL_CACHE_URLS = [
 ];
 const REUSABLE_CACHE_URLS = [
   "/assets/about-CdbHPLj7.js",
+  "/assets/app-BAl6NgUq.js",
   "/assets/app-CHHmhBlM.css",
-  "/assets/app-QzGukU9K.js",
   "/assets/black-BQzUrISt.png",
   "/assets/black-DXtLqhAO.png",
   "/assets/black-farmer-DhsyBoBB.png",
@@ -228,8 +228,8 @@ const REUSABLE_CACHE_URLS = [
   "/assets/red-farmer-BNq4WFja.png",
   "/assets/red-farmer-Ck_MVB_z.png",
   "/assets/retina_wood-Dasm1nPh.png",
-  "/assets/SearchPanel-CVklQZoE.js",
   "/assets/SearchPanel-DI1DqRPE.css",
+  "/assets/SearchPanel-Znb3ymPk.js",
   "/assets/tex2res4-Bo-bwDiX.png",
   "/assets/tile_01-DanlrLDJ.webp",
   "/assets/tile_02-CovFDKtX.webp",
@@ -304,7 +304,7 @@ const REUSABLE_CACHE_URLS = [
   "/assets/tile_71-Gt9G7xne.webp",
   "/assets/tile_72-De8y3QTl.webp",
   "/assets/tileable_wood_texture-DMAuHUfI.png",
-  "/assets/tournament-navigation-CnMZQy2M.json",
+  "/assets/tournament-navigation-BVlDdOCF.json",
   "/assets/type_01-Dp9y0Itl.webp",
   "/assets/type_01-DwtQm4me.webp",
   "/assets/type_02-B1ZKg2-l.webp",
