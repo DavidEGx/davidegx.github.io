@@ -1,4 +1,4 @@
-import{_ as e,a as t,c as n,d as r,f as i,g as a,h as o,i as s,l as c,m as l,n as u,o as d,p as f,r as p,s as m,t as h,u as g,v as _}from"./app-CU7-KyiH.js";var v=`/`,y=15;function b(e=v){return`(() => {
+import{_ as e,a as t,c as n,d as r,f as i,g as a,h as o,i as s,l as c,m as l,n as u,o as d,p as f,r as p,s as m,t as h,u as g,v as _}from"./app-CpB6H7S3.js";var v=`/`,y=15;function b(e=v){return`(async () => {
   const ALPHABET = ${JSON.stringify(g)};
   const BASE64_ALPHABET = ${JSON.stringify(r)};
   const TILE_TYPE_BASE = 24;
@@ -12,6 +12,69 @@ import{_ as e,a as t,c as n,d as r,f as i,g as a,h as o,i as s,l as c,m as l,n a
     ff0000: "red",
     ffa500: "yellow",
   };
+
+  let gameLogs = window.g_gamelogs;
+  if (!Array.isArray(gameLogs)) {
+    const tableId = new URLSearchParams(window.location.search).get("table");
+    if (!tableId) {
+      window.alert(
+        "Open a completed BGA game or replay before selecting Review in Lab.",
+      );
+      return;
+    }
+
+    const tokenMatch = document.documentElement?.innerHTML.match(
+      /requestToken["']?\\s*:\\s*["']([^"']+)/,
+    );
+    const headers = { "X-Requested-With": "XMLHttpRequest" };
+    if (tokenMatch) headers["X-Request-Token"] = tokenMatch[1];
+
+    const fetchJson = async (path) => {
+      const response = await fetch(path, {
+        credentials: "same-origin",
+        headers,
+      });
+      if (!response.ok) {
+        throw new Error(\`BGA returned HTTP \${response.status}\`);
+      }
+      return response.json();
+    };
+    const logsPath =
+      "/archive/archive/logs.html?table=" +
+      encodeURIComponent(tableId) +
+      "&translated=true";
+
+    try {
+      let response = await fetchJson(logsPath);
+      if (
+        String(response.status) === "0" &&
+        typeof response.error === "string" &&
+        response.error.includes("Cannot find gamenotifs log file")
+      ) {
+        await fetchJson(
+          "/gamereview/gamereview/requestTableArchive.html?table=" +
+            encodeURIComponent(tableId),
+        );
+        response = await fetchJson(logsPath);
+      }
+
+      if (String(response.status) === "0") {
+        throw new Error(
+          response.error || response.data?.error || "BGA rejected the request",
+        );
+      }
+      if (!Array.isArray(response.data?.logs)) {
+        throw new Error("BGA did not return replay logs");
+      }
+      gameLogs = response.data.logs;
+    } catch (error) {
+      window.alert(
+        "Could not load this BGA replay: " +
+          (error instanceof Error ? error.message : String(error)),
+      );
+      return;
+    }
+  }
 
   const encodeTileTypes = (tileTypes) => {
     let numberB10 = BigInt(0);
@@ -47,7 +110,7 @@ import{_ as e,a as t,c as n,d as r,f as i,g as a,h as o,i as s,l as c,m as l,n a
     const rotationCoded = ALPHABET[rotation];
     return \`\${col}\${row}\${rotationCoded}\${movement.meeplePosition}\`;
   };
-  const movements = window.g_gamelogs
+  const movements = gameLogs
     .flatMap((line) => line.data)
     .filter((move) => move.type === "playTile" || move.type === "playPartisan")
     .flatMap((move) => move.args);
@@ -78,11 +141,26 @@ import{_ as e,a as t,c as n,d as r,f as i,g as a,h as o,i as s,l as c,m as l,n a
 
   const colors = playerIds.map((playerId) => {
     const meeple = document.querySelector(\`#player_board_\${playerId} .partisan\`);
-    if (!meeple) return "";
+    if (meeple) {
+      for (const color of Object.keys(COLORMAP)) {
+        if (meeple.classList.contains(\`partisan_\${color}\`)) {
+          return COLORMAP[color];
+        }
+      }
+    }
 
-    for (const color of Object.keys(COLORMAP)) {
-      if (meeple.classList.contains(\`partisan_\${color}\`)) {
-        return COLORMAP[color];
+    for (const line of gameLogs) {
+      for (const event of line.data || []) {
+        const result = event.args?.args?.result;
+        if (event.type !== "gameStateChange" || !Array.isArray(result)) continue;
+
+        const player = result.find(
+          (candidate) => String(candidate.player ?? candidate.id) === playerId,
+        );
+        const color = String(player?.color || "")
+          .replace(/^#/, "")
+          .toLowerCase();
+        if (COLORMAP[color]) return COLORMAP[color];
       }
     }
     return "";
