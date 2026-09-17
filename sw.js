@@ -1,10 +1,10 @@
-const CACHE_NAME = "carcassonne-sandbox-01f94af9dc39";
+const CACHE_NAME = "carcassonne-sandbox-42f4ea542846";
 const CACHE_PREFIX = "carcassonne-sandbox-";
 const OPTIONAL_CACHE_MESSAGE = "CACHE_OPTIONAL_ASSETS";
 const CRITICAL_CACHE_URLS = [
   "/",
   "/assets/app-C4yR-AjN.css",
-  "/assets/app-D1DYK17G.js",
+  "/assets/app-j1piO2M4.js",
   "/assets/material-symbols-outlined-CeOSsXN5.woff2"
 ];
 const OPTIONAL_CACHE_URLS = [
@@ -55,7 +55,7 @@ const OPTIONAL_CACHE_URLS = [
   "/assets/red-farmer-BNq4WFja.png",
   "/assets/red-farmer-Ck_MVB_z.png",
   "/assets/retina_wood-Dasm1nPh.png",
-  "/assets/SearchPanel-Cow1Ritf.js",
+  "/assets/SearchPanel-DkqLFDds.js",
   "/assets/SearchPanel-XLMdx4t-.css",
   "/assets/tex2res4-Bo-bwDiX.png",
   "/assets/tile_01-DanlrLDJ.webp",
@@ -187,7 +187,7 @@ const OPTIONAL_CACHE_URLS = [
 const REUSABLE_CACHE_URLS = [
   "/assets/about-CdbHPLj7.js",
   "/assets/app-C4yR-AjN.css",
-  "/assets/app-D1DYK17G.js",
+  "/assets/app-j1piO2M4.js",
   "/assets/black-BQzUrISt.png",
   "/assets/black-DXtLqhAO.png",
   "/assets/black-farmer-DhsyBoBB.png",
@@ -228,7 +228,7 @@ const REUSABLE_CACHE_URLS = [
   "/assets/red-farmer-BNq4WFja.png",
   "/assets/red-farmer-Ck_MVB_z.png",
   "/assets/retina_wood-Dasm1nPh.png",
-  "/assets/SearchPanel-Cow1Ritf.js",
+  "/assets/SearchPanel-DkqLFDds.js",
   "/assets/SearchPanel-XLMdx4t-.css",
   "/assets/tex2res4-Bo-bwDiX.png",
   "/assets/tile_01-DanlrLDJ.webp",
