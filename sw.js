@@ -1,10 +1,10 @@
-const CACHE_NAME = "carcassonne-sandbox-d4d32e67011f";
+const CACHE_NAME = "carcassonne-sandbox-473c1ff13743";
 const CACHE_PREFIX = "carcassonne-sandbox-";
 const OPTIONAL_CACHE_MESSAGE = "CACHE_OPTIONAL_ASSETS";
 const CRITICAL_CACHE_URLS = [
   "/",
+  "/assets/app-DaDiAKNB.js",
   "/assets/app-DK0gkBsQ.css",
-  "/assets/app-DUy0h2RB.js",
   "/assets/material-symbols-outlined-CeOSsXN5.woff2"
 ];
 const OPTIONAL_CACHE_URLS = [
@@ -22,7 +22,8 @@ const OPTIONAL_CACHE_URLS = [
   "/tournament-icons/cs_liga.webp",
   "/tournament-icons/devir.webp",
   "/tournament-icons/world-championship.webp",
-  "/assets/about-CdbHPLj7.js",
+  "/404.html",
+  "/about/index.html",
   "/assets/black-BQzUrISt.png",
   "/assets/black-DXtLqhAO.png",
   "/assets/black-farmer-DhsyBoBB.png",
@@ -44,18 +45,16 @@ const OPTIONAL_CACHE_URLS = [
   "/assets/green-GmuPf2Hk.png",
   "/assets/grey_wash_wall-8yyRqWx-.png",
   "/assets/landing-BoRZw7LI.css",
-  "/assets/landing-DQoigWS9.js",
   "/assets/low_contrast_linen-ROoHiSHb.png",
   "/assets/manifest-DzE7Fo3f.json",
   "/assets/moroccan-flower-dark-BEjHxG9j.png",
-  "/assets/notFound-CdbHPLj7.js",
   "/assets/purty_wood-D-XFShmP.png",
   "/assets/red-B9mz31M5.png",
   "/assets/red-BuGBie8f.png",
   "/assets/red-farmer-BNq4WFja.png",
   "/assets/red-farmer-Ck_MVB_z.png",
   "/assets/retina_wood-Dasm1nPh.png",
-  "/assets/SearchPanel-CDMKrmHI.js",
+  "/assets/SearchPanel-D2z6KCY7.js",
   "/assets/SearchPanel-XLMdx4t-.css",
   "/assets/tex2res4-Bo-bwDiX.png",
   "/assets/tile_01-DanlrLDJ.webp",
@@ -185,9 +184,8 @@ const OPTIONAL_CACHE_URLS = [
   "/icons/icon-maskable-512.png"
 ];
 const REUSABLE_CACHE_URLS = [
-  "/assets/about-CdbHPLj7.js",
+  "/assets/app-DaDiAKNB.js",
   "/assets/app-DK0gkBsQ.css",
-  "/assets/app-DUy0h2RB.js",
   "/assets/black-BQzUrISt.png",
   "/assets/black-DXtLqhAO.png",
   "/assets/black-farmer-DhsyBoBB.png",
@@ -211,7 +209,6 @@ const REUSABLE_CACHE_URLS = [
   "/assets/green-GmuPf2Hk.png",
   "/assets/grey_wash_wall-8yyRqWx-.png",
   "/assets/landing-BoRZw7LI.css",
-  "/assets/landing-DQoigWS9.js",
   "/assets/low_contrast_linen-ROoHiSHb.png",
   "/assets/manifest-DzE7Fo3f.json",
   "/assets/manrope-cyrillic-Dvxsihut.woff2",
@@ -221,14 +218,13 @@ const REUSABLE_CACHE_URLS = [
   "/assets/manrope-vietnamese-usUDDRr7.woff2",
   "/assets/material-symbols-outlined-CeOSsXN5.woff2",
   "/assets/moroccan-flower-dark-BEjHxG9j.png",
-  "/assets/notFound-CdbHPLj7.js",
   "/assets/purty_wood-D-XFShmP.png",
   "/assets/red-B9mz31M5.png",
   "/assets/red-BuGBie8f.png",
   "/assets/red-farmer-BNq4WFja.png",
   "/assets/red-farmer-Ck_MVB_z.png",
   "/assets/retina_wood-Dasm1nPh.png",
-  "/assets/SearchPanel-CDMKrmHI.js",
+  "/assets/SearchPanel-D2z6KCY7.js",
   "/assets/SearchPanel-XLMdx4t-.css",
   "/assets/tex2res4-Bo-bwDiX.png",
   "/assets/tile_01-DanlrLDJ.webp",
