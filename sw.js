@@ -1,10 +1,10 @@
-const CACHE_NAME = "carcassonne-sandbox-a7a2267f4552";
+const CACHE_NAME = "carcassonne-sandbox-b5657011876d";
 const CACHE_PREFIX = "carcassonne-sandbox-";
 const OPTIONAL_CACHE_MESSAGE = "CACHE_OPTIONAL_ASSETS";
 const CRITICAL_CACHE_URLS = [
   "/",
-  "/assets/app-CVjQt8Bz.js",
   "/assets/app-DvbJ9akQ.css",
+  "/assets/app-s6oZZyud.js",
   "/assets/material-symbols-outlined-CeOSsXN5.woff2"
 ];
 const OPTIONAL_CACHE_URLS = [
@@ -21,6 +21,7 @@ const OPTIONAL_CACHE_URLS = [
   "/public-pages.css",
   "/tournament-icons/cs_liga.webp",
   "/tournament-icons/devir.webp",
+  "/tournament-icons/ukrainian-nationals.webp",
   "/tournament-icons/world-championship.webp",
   "/404.html",
   "/about/index.html",
@@ -54,7 +55,7 @@ const OPTIONAL_CACHE_URLS = [
   "/assets/red-farmer-BNq4WFja.png",
   "/assets/red-farmer-Ck_MVB_z.png",
   "/assets/retina_wood-Dasm1nPh.png",
-  "/assets/SearchPanel-D3vMv75c.js",
+  "/assets/SearchPanel-DpbkLUXI.js",
   "/assets/SearchPanel-XLMdx4t-.css",
   "/assets/tex2res4-Bo-bwDiX.png",
   "/assets/tile_01-DanlrLDJ.webp",
@@ -130,7 +131,7 @@ const OPTIONAL_CACHE_URLS = [
   "/assets/tile_71-Gt9G7xne.webp",
   "/assets/tile_72-De8y3QTl.webp",
   "/assets/tileable_wood_texture-DMAuHUfI.png",
-  "/assets/tournament-navigation-PfXks30H.json",
+  "/assets/tournament-navigation-2OGxaafJ.json",
   "/assets/type_01-Dp9y0Itl.webp",
   "/assets/type_01-DwtQm4me.webp",
   "/assets/type_02-B1ZKg2-l.webp",
@@ -184,8 +185,8 @@ const OPTIONAL_CACHE_URLS = [
   "/icons/icon-maskable-512.png"
 ];
 const REUSABLE_CACHE_URLS = [
-  "/assets/app-CVjQt8Bz.js",
   "/assets/app-DvbJ9akQ.css",
+  "/assets/app-s6oZZyud.js",
   "/assets/black-BQzUrISt.png",
   "/assets/black-DXtLqhAO.png",
   "/assets/black-farmer-DhsyBoBB.png",
@@ -224,7 +225,7 @@ const REUSABLE_CACHE_URLS = [
   "/assets/red-farmer-BNq4WFja.png",
   "/assets/red-farmer-Ck_MVB_z.png",
   "/assets/retina_wood-Dasm1nPh.png",
-  "/assets/SearchPanel-D3vMv75c.js",
+  "/assets/SearchPanel-DpbkLUXI.js",
   "/assets/SearchPanel-XLMdx4t-.css",
   "/assets/tex2res4-Bo-bwDiX.png",
   "/assets/tile_01-DanlrLDJ.webp",
@@ -300,7 +301,7 @@ const REUSABLE_CACHE_URLS = [
   "/assets/tile_71-Gt9G7xne.webp",
   "/assets/tile_72-De8y3QTl.webp",
   "/assets/tileable_wood_texture-DMAuHUfI.png",
-  "/assets/tournament-navigation-PfXks30H.json",
+  "/assets/tournament-navigation-2OGxaafJ.json",
   "/assets/type_01-Dp9y0Itl.webp",
   "/assets/type_01-DwtQm4me.webp",
   "/assets/type_02-B1ZKg2-l.webp",
