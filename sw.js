@@ -1,10 +1,10 @@
-const CACHE_NAME = "carcassonne-sandbox-f69c8e9ea26b";
+const CACHE_NAME = "carcassonne-sandbox-d488634dcdb0";
 const CACHE_PREFIX = "carcassonne-sandbox-";
 const OPTIONAL_CACHE_MESSAGE = "CACHE_OPTIONAL_ASSETS";
 const CRITICAL_CACHE_URLS = [
   "/",
-  "/assets/app-B2ERylgp.js",
-  "/assets/app-iS9SU5_O.css",
+  "/assets/app-drC76Qva.css",
+  "/assets/app-P0X6DpbJ.js",
   "/assets/material-symbols-outlined-CeOSsXN5.woff2"
 ];
 const OPTIONAL_CACHE_URLS = [
@@ -42,6 +42,7 @@ const OPTIONAL_CACHE_URLS = [
   "/assets/dark-triangles-DhugQ2Dw.png",
   "/assets/denim-C6eQYlav.png",
   "/assets/double-bubble-dark-B53eXaiL.webp",
+  "/assets/es-hM9X8FhB.js",
   "/assets/green-83JFsTrV.png",
   "/assets/green-farmer-CWHbVeFD.png",
   "/assets/green-farmer-OK5-aJ79.png",
@@ -57,7 +58,7 @@ const OPTIONAL_CACHE_URLS = [
   "/assets/red-farmer-BNq4WFja.png",
   "/assets/red-farmer-Ck_MVB_z.png",
   "/assets/retina_wood-Dasm1nPh.png",
-  "/assets/SearchPanel-BtS2Y7mZ.js",
+  "/assets/SearchPanel-DgN_K6gY.js",
   "/assets/SearchPanel-XLMdx4t-.css",
   "/assets/tex2res4-Bo-bwDiX.png",
   "/assets/tile_01-DanlrLDJ.webp",
@@ -133,7 +134,7 @@ const OPTIONAL_CACHE_URLS = [
   "/assets/tile_71-Gt9G7xne.webp",
   "/assets/tile_72-De8y3QTl.webp",
   "/assets/tileable_wood_texture-DMAuHUfI.png",
-  "/assets/tournament-navigation-9wtWNan-.json",
+  "/assets/tournament-navigation-BZkpbKBO.json",
   "/assets/type_01-Dp9y0Itl.webp",
   "/assets/type_01-DwtQm4me.webp",
   "/assets/type_02-B1ZKg2-l.webp",
@@ -187,8 +188,8 @@ const OPTIONAL_CACHE_URLS = [
   "/icons/icon-maskable-512.png"
 ];
 const REUSABLE_CACHE_URLS = [
-  "/assets/app-B2ERylgp.js",
-  "/assets/app-iS9SU5_O.css",
+  "/assets/app-drC76Qva.css",
+  "/assets/app-P0X6DpbJ.js",
   "/assets/black-BQzUrISt.png",
   "/assets/black-DXtLqhAO.png",
   "/assets/black-farmer-DhsyBoBB.png",
@@ -206,6 +207,7 @@ const REUSABLE_CACHE_URLS = [
   "/assets/dm-sans-latin-ext-BOFOeGcA.woff2",
   "/assets/dm-sans-latin-Xz1IZZA0.woff2",
   "/assets/double-bubble-dark-B53eXaiL.webp",
+  "/assets/es-hM9X8FhB.js",
   "/assets/green-83JFsTrV.png",
   "/assets/green-farmer-CWHbVeFD.png",
   "/assets/green-farmer-OK5-aJ79.png",
@@ -227,7 +229,7 @@ const REUSABLE_CACHE_URLS = [
   "/assets/red-farmer-BNq4WFja.png",
   "/assets/red-farmer-Ck_MVB_z.png",
   "/assets/retina_wood-Dasm1nPh.png",
-  "/assets/SearchPanel-BtS2Y7mZ.js",
+  "/assets/SearchPanel-DgN_K6gY.js",
   "/assets/SearchPanel-XLMdx4t-.css",
   "/assets/tex2res4-Bo-bwDiX.png",
   "/assets/tile_01-DanlrLDJ.webp",
@@ -303,7 +305,7 @@ const REUSABLE_CACHE_URLS = [
   "/assets/tile_71-Gt9G7xne.webp",
   "/assets/tile_72-De8y3QTl.webp",
   "/assets/tileable_wood_texture-DMAuHUfI.png",
-  "/assets/tournament-navigation-9wtWNan-.json",
+  "/assets/tournament-navigation-BZkpbKBO.json",
   "/assets/type_01-Dp9y0Itl.webp",
   "/assets/type_01-DwtQm4me.webp",
   "/assets/type_02-B1ZKg2-l.webp",
