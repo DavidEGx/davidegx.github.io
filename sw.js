@@ -1,9 +1,9 @@
-const CACHE_NAME = "carcassonne-sandbox-ccffe720c1b2";
+const CACHE_NAME = "carcassonne-sandbox-737dbba71193";
 const CACHE_PREFIX = "carcassonne-sandbox-";
 const OPTIONAL_CACHE_MESSAGE = "CACHE_OPTIONAL_ASSETS";
 const CRITICAL_CACHE_URLS = [
   "/",
-  "/assets/app-BHQytb-z.js",
+  "/assets/app-CcBfkPT6.js",
   "/assets/app-drC76Qva.css",
   "/assets/material-symbols-outlined-CeOSsXN5.woff2"
 ];
@@ -42,7 +42,7 @@ const OPTIONAL_CACHE_URLS = [
   "/assets/dark-triangles-DhugQ2Dw.png",
   "/assets/denim-C6eQYlav.png",
   "/assets/double-bubble-dark-B53eXaiL.webp",
-  "/assets/es-hM9X8FhB.js",
+  "/assets/es-beTXU0Q_.js",
   "/assets/green-83JFsTrV.png",
   "/assets/green-farmer-CWHbVeFD.png",
   "/assets/green-farmer-OK5-aJ79.png",
@@ -58,7 +58,7 @@ const OPTIONAL_CACHE_URLS = [
   "/assets/red-farmer-BNq4WFja.png",
   "/assets/red-farmer-Ck_MVB_z.png",
   "/assets/retina_wood-Dasm1nPh.png",
-  "/assets/SearchPanel-C2WY_i1P.js",
+  "/assets/SearchPanel-C0_MU_FM.js",
   "/assets/SearchPanel-XLMdx4t-.css",
   "/assets/tex2res4-Bo-bwDiX.png",
   "/assets/tile_01-DanlrLDJ.webp",
@@ -188,7 +188,7 @@ const OPTIONAL_CACHE_URLS = [
   "/icons/icon-maskable-512.png"
 ];
 const REUSABLE_CACHE_URLS = [
-  "/assets/app-BHQytb-z.js",
+  "/assets/app-CcBfkPT6.js",
   "/assets/app-drC76Qva.css",
   "/assets/black-BQzUrISt.png",
   "/assets/black-DXtLqhAO.png",
@@ -207,7 +207,7 @@ const REUSABLE_CACHE_URLS = [
   "/assets/dm-sans-latin-ext-BOFOeGcA.woff2",
   "/assets/dm-sans-latin-Xz1IZZA0.woff2",
   "/assets/double-bubble-dark-B53eXaiL.webp",
-  "/assets/es-hM9X8FhB.js",
+  "/assets/es-beTXU0Q_.js",
   "/assets/green-83JFsTrV.png",
   "/assets/green-farmer-CWHbVeFD.png",
   "/assets/green-farmer-OK5-aJ79.png",
@@ -229,7 +229,7 @@ const REUSABLE_CACHE_URLS = [
   "/assets/red-farmer-BNq4WFja.png",
   "/assets/red-farmer-Ck_MVB_z.png",
   "/assets/retina_wood-Dasm1nPh.png",
-  "/assets/SearchPanel-C2WY_i1P.js",
+  "/assets/SearchPanel-C0_MU_FM.js",
   "/assets/SearchPanel-XLMdx4t-.css",
   "/assets/tex2res4-Bo-bwDiX.png",
   "/assets/tile_01-DanlrLDJ.webp",
