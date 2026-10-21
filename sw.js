@@ -1,10 +1,10 @@
-const CACHE_NAME = "carcassonne-sandbox-d6823e1e2787";
+const CACHE_NAME = "carcassonne-sandbox-412e12e9c9c0";
 const CACHE_PREFIX = "carcassonne-sandbox-";
 const OPTIONAL_CACHE_MESSAGE = "CACHE_OPTIONAL_ASSETS";
 const CRITICAL_CACHE_URLS = [
   "/",
-  "/assets/app-BoDB8bqG.js",
   "/assets/app-DCuB6b7Q.css",
+  "/assets/app-rJ94DMVi.js",
   "/assets/material-symbols-outlined-CeOSsXN5.woff2"
 ];
 const OPTIONAL_CACHE_URLS = [
@@ -42,7 +42,7 @@ const OPTIONAL_CACHE_URLS = [
   "/assets/dark-triangles-DhugQ2Dw.png",
   "/assets/denim-C6eQYlav.png",
   "/assets/double-bubble-dark-B53eXaiL.webp",
-  "/assets/es-beTXU0Q_.js",
+  "/assets/es-aDou7q6q.js",
   "/assets/green-83JFsTrV.png",
   "/assets/green-farmer-CWHbVeFD.png",
   "/assets/green-farmer-OK5-aJ79.png",
@@ -58,7 +58,7 @@ const OPTIONAL_CACHE_URLS = [
   "/assets/red-farmer-BNq4WFja.png",
   "/assets/red-farmer-Ck_MVB_z.png",
   "/assets/retina_wood-Dasm1nPh.png",
-  "/assets/SearchPanel-Bd0iJWh1.js",
+  "/assets/SearchPanel-BKW5WmLP.js",
   "/assets/SearchPanel-XLMdx4t-.css",
   "/assets/tex2res4-Bo-bwDiX.png",
   "/assets/tile_01-DanlrLDJ.webp",
@@ -188,8 +188,8 @@ const OPTIONAL_CACHE_URLS = [
   "/icons/icon-maskable-512.png"
 ];
 const REUSABLE_CACHE_URLS = [
-  "/assets/app-BoDB8bqG.js",
   "/assets/app-DCuB6b7Q.css",
+  "/assets/app-rJ94DMVi.js",
   "/assets/black-BQzUrISt.png",
   "/assets/black-DXtLqhAO.png",
   "/assets/black-farmer-DhsyBoBB.png",
@@ -207,7 +207,7 @@ const REUSABLE_CACHE_URLS = [
   "/assets/dm-sans-latin-ext-BOFOeGcA.woff2",
   "/assets/dm-sans-latin-Xz1IZZA0.woff2",
   "/assets/double-bubble-dark-B53eXaiL.webp",
-  "/assets/es-beTXU0Q_.js",
+  "/assets/es-aDou7q6q.js",
   "/assets/green-83JFsTrV.png",
   "/assets/green-farmer-CWHbVeFD.png",
   "/assets/green-farmer-OK5-aJ79.png",
@@ -229,7 +229,7 @@ const REUSABLE_CACHE_URLS = [
   "/assets/red-farmer-BNq4WFja.png",
   "/assets/red-farmer-Ck_MVB_z.png",
   "/assets/retina_wood-Dasm1nPh.png",
-  "/assets/SearchPanel-Bd0iJWh1.js",
+  "/assets/SearchPanel-BKW5WmLP.js",
   "/assets/SearchPanel-XLMdx4t-.css",
   "/assets/tex2res4-Bo-bwDiX.png",
   "/assets/tile_01-DanlrLDJ.webp",
