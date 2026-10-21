@@ -1,9 +1,9 @@
-const CACHE_NAME = "carcassonne-sandbox-944a14835767";
+const CACHE_NAME = "carcassonne-sandbox-d6823e1e2787";
 const CACHE_PREFIX = "carcassonne-sandbox-";
 const OPTIONAL_CACHE_MESSAGE = "CACHE_OPTIONAL_ASSETS";
 const CRITICAL_CACHE_URLS = [
   "/",
-  "/assets/app-C50wLJB7.js",
+  "/assets/app-BoDB8bqG.js",
   "/assets/app-DCuB6b7Q.css",
   "/assets/material-symbols-outlined-CeOSsXN5.woff2"
 ];
@@ -58,7 +58,7 @@ const OPTIONAL_CACHE_URLS = [
   "/assets/red-farmer-BNq4WFja.png",
   "/assets/red-farmer-Ck_MVB_z.png",
   "/assets/retina_wood-Dasm1nPh.png",
-  "/assets/SearchPanel-BR_KV9rR.js",
+  "/assets/SearchPanel-Bd0iJWh1.js",
   "/assets/SearchPanel-XLMdx4t-.css",
   "/assets/tex2res4-Bo-bwDiX.png",
   "/assets/tile_01-DanlrLDJ.webp",
@@ -134,7 +134,7 @@ const OPTIONAL_CACHE_URLS = [
   "/assets/tile_71-Gt9G7xne.webp",
   "/assets/tile_72-De8y3QTl.webp",
   "/assets/tileable_wood_texture-DMAuHUfI.png",
-  "/assets/tournament-navigation-2lZHS7Jl.json",
+  "/assets/tournament-navigation-q_MV9Z_N.json",
   "/assets/type_01-Dp9y0Itl.webp",
   "/assets/type_01-DwtQm4me.webp",
   "/assets/type_02-B1ZKg2-l.webp",
@@ -188,7 +188,7 @@ const OPTIONAL_CACHE_URLS = [
   "/icons/icon-maskable-512.png"
 ];
 const REUSABLE_CACHE_URLS = [
-  "/assets/app-C50wLJB7.js",
+  "/assets/app-BoDB8bqG.js",
   "/assets/app-DCuB6b7Q.css",
   "/assets/black-BQzUrISt.png",
   "/assets/black-DXtLqhAO.png",
@@ -229,7 +229,7 @@ const REUSABLE_CACHE_URLS = [
   "/assets/red-farmer-BNq4WFja.png",
   "/assets/red-farmer-Ck_MVB_z.png",
   "/assets/retina_wood-Dasm1nPh.png",
-  "/assets/SearchPanel-BR_KV9rR.js",
+  "/assets/SearchPanel-Bd0iJWh1.js",
   "/assets/SearchPanel-XLMdx4t-.css",
   "/assets/tex2res4-Bo-bwDiX.png",
   "/assets/tile_01-DanlrLDJ.webp",
@@ -305,7 +305,7 @@ const REUSABLE_CACHE_URLS = [
   "/assets/tile_71-Gt9G7xne.webp",
   "/assets/tile_72-De8y3QTl.webp",
   "/assets/tileable_wood_texture-DMAuHUfI.png",
-  "/assets/tournament-navigation-2lZHS7Jl.json",
+  "/assets/tournament-navigation-q_MV9Z_N.json",
   "/assets/type_01-Dp9y0Itl.webp",
   "/assets/type_01-DwtQm4me.webp",
   "/assets/type_02-B1ZKg2-l.webp",
