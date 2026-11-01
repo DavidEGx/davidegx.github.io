@@ -1,4 +1,4 @@
-import{_ as e,a as t,b as n,c as r,d as i,f as a,g as o,h as s,i as c,l,m as u,n as d,o as f,p,r as m,s as h,t as g,u as _,v,y}from"./app-BTC1q4Pl.js";var b=`/`,x=15;function S(e=b){return`(async () => {
+import{_ as e,a as t,b as n,c as r,d as i,f as a,g as o,h as s,i as c,l,m as u,n as d,o as f,p,r as m,s as h,t as g,u as _,v,y}from"./app-DgOFbbZt.js";var b=`/`,x=15;function S(e=b){return`(async () => {
   const ALPHABET = ${JSON.stringify(a.join(``))}.split("");
   const BASE64_ALPHABET = ${JSON.stringify(p)};
   const TILE_TYPE_BASE = 24;
@@ -15,6 +15,7 @@ import{_ as e,a as t,b as n,c as r,d as i,f as a,g as o,h as s,i as c,l,m as u,n
   };
 
   let gameLogs = window.g_gamelogs;
+  let archivePlayers = [];
   if (!Array.isArray(gameLogs)) {
     const tableId = new URLSearchParams(window.location.search).get("table");
     if (!tableId) {
@@ -68,6 +69,7 @@ import{_ as e,a as t,b as n,c as r,d as i,f as a,g as o,h as s,i as c,l,m as u,n
         throw new Error("BGA did not return replay logs");
       }
       gameLogs = response.data.logs;
+      archivePlayers = Array.isArray(response.data.players) ? response.data.players : [];
     } catch (error) {
       window.alert(
         "Could not load this BGA replay: " +
@@ -137,8 +139,9 @@ import{_ as e,a as t,b as n,c as r,d as i,f as a,g as o,h as s,i as c,l,m as u,n
       continue;
     }
 
-    if (!playerIds.includes(movement.player_id)) {
-      playerIds.push(movement.player_id);
+    const playerId = String(movement.player_id);
+    if (!playerIds.includes(playerId)) {
+      playerIds.push(playerId);
       playerNames.push(movement.player_name);
     }
 
@@ -152,6 +155,15 @@ import{_ as e,a as t,b as n,c as r,d as i,f as a,g as o,h as s,i as c,l,m as u,n
   }
 
   const colors = playerIds.map((playerId) => {
+    const archivePlayer = archivePlayers.find(
+      (player) => player && String(player.id) === playerId,
+    );
+    const archiveColor = String(archivePlayer?.color || "")
+      .trim()
+      .replace(/^#/, "")
+      .toLowerCase();
+    if (COLORMAP[archiveColor]) return COLORMAP[archiveColor];
+
     const meeple = document.querySelector(\`#player_board_\${playerId} .partisan\`);
     if (meeple) {
       for (const color of Object.keys(COLORMAP)) {
@@ -170,6 +182,7 @@ import{_ as e,a as t,b as n,c as r,d as i,f as a,g as o,h as s,i as c,l,m as u,n
           (candidate) => String(candidate.player ?? candidate.id) === playerId,
         );
         const color = String(player?.color || "")
+          .trim()
           .replace(/^#/, "")
           .toLowerCase();
         if (COLORMAP[color]) return COLORMAP[color];
